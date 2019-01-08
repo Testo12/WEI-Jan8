@@ -5,11 +5,23 @@ block content
             #inputcontainer
                 span Profil: 
                 input#namn(type="text", placeholder="Namn")
+                br
+                #team
+                    span Välj Team 
+                    select#teamselect(name="Team") 
+                        option(value="WEI") W.E.I
+                        option(value="CUE") C.U.E
             button#profilbutton.buttonstyle(onClick="addProfile()") Lägg till
         form#newskillform.newform(action="")
              h3#formheader Lägg till Färdighet
              #inputcontainer
                 span Färdighet: 
                 input#skill(type="text", placeholder="Färdigheter")
+                br
+                #team
+                    span Välj Team 
+                    select#teamselect(name="Team") 
+                        option(value="WEI") W.E.I
+                        option(value="CUE") C.U.E
               button#skillbutton.buttonstyle(onClick="addSkill()") Lägg till
      
