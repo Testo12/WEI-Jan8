@@ -49,3 +49,53 @@ function goToHome(token){
         }
     });
 }
+
+function addProfile(){
+    $("form").submit(function(e){
+        e.preventDefault();
+    });
+    var profile = $('#namn').val();
+    var team = $('#teamselect').val();
+    userData = {
+        team: team,
+        name: profile
+        
+
+    };
+    console.log(userData);
+    $.ajax({
+        method: 'POST',
+        url: 'member',
+        contentType: "application/json",
+        data: JSON.stringify(userData),
+        success: function(results){
+            alert(results);
+        }
+    });
+}
+
+
+
+function addSkill(){
+    $("form").submit(function(e){
+        e.preventDefault();
+    });
+    var info = $('#skill').val();
+    var team = $('#teamselectother').val();
+    userData = {
+        team: team,
+        info: info
+        
+
+    };
+    console.log(userData);
+    $.ajax({
+        method: 'POST',
+        url: 'skill',
+        contentType: "application/json",
+        data: JSON.stringify(userData),
+        success: function(results){
+            alert(results);
+        }
+    });;
+}

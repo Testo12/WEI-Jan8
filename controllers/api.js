@@ -18,7 +18,7 @@ exports.member = function(req, res){
 
 
 exports.skill = function(req, res){
-    Users.findOneAndUpdate({team: req.body.team}, {$push:{name: req.body.skill}}, {new: true}, (err, doc) =>{
+    Users.findOneAndUpdate({team: req.body.team}, {$push:{info: req.body.info}}, {new: true}, (err, doc) =>{
         if (err){
             return next(err);
         }
