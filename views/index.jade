@@ -1,15 +1,14 @@
 extend layout
 block content
-        form#newprofilform.newform(action="")
-            h3#formheader Lägg till Medlem
-            #inputcontainer
-                span Profil: 
-                input#namn(type="text", placeholder="Namn")
-            button#profilbutton.buttonstyle Lägg till
-        form#newskillform.newform(action="")
-             h3#formheader Lägg till Färdighet
-             #inputcontainer
-                span Färdighet: 
-                input#skill(type="text", placeholder="Färdigheter")
-              button#skillbutton.buttonstyle Lägg till
-     
+    h3#loginheader Adminsida för T4 teamvy
+    form#loginform.newform
+        h5#formheader Logga in
+        #inputcontainer
+            span Användare
+            br
+            input.logincontent#userName(type="text", name="username")
+            br
+            span Lösenord
+            br
+            input.logincontent#password(type="password", name="pasword")
+        button#loginbutton.buttonstyle(onClick="login()") Logga in
