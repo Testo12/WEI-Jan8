@@ -5,11 +5,11 @@ block content
             #inputcontainer
                 span Profil: 
                 input#namn(type="text", placeholder="Namn")
-            button#profilbutton.buttonstyle Lägg till
+            button#profilbutton.buttonstyle(onClick="addProfile()") Lägg till
         form#newskillform.newform(action="")
              h3#formheader Lägg till Färdighet
              #inputcontainer
                 span Färdighet: 
                 input#skill(type="text", placeholder="Färdigheter")
-              button#skillbutton.buttonstyle Lägg till
+              button#skillbutton.buttonstyle(onClick="addSkill()") Lägg till
      

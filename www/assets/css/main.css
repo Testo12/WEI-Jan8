@@ -20,6 +20,11 @@ body {
     text-align: center;
 }
 
+#loginheader {
+    text-align: center;
+    margin-top: 10%;
+}
+
 #newprofilform {
     margin-left: 15%;
     margin-right: 5%;
@@ -50,4 +55,20 @@ body {
     height: 85%;
     text-align: center;
     padding: 10px;
+}
+
+#loginform {
+    margin:auto;
+    float: unset;
+    margin-top: 10px;
+}
+
+.logincontent {
+    width: 60%;
+    text-align: center;
+}
+
+#loginbutton {
+    text-align: center;
+    width: 100%;
 }

@@ -1,2 +1,14 @@
 extend layout
 block content
+    h3#loginheader Adminsida för T4 teamvy
+    form#loginform.newform
+        h5#formheader Logga in
+        #inputcontainer
+            span Användare
+            br
+            input.logincontent#userName(type="text", name="username")
+            br
+            span Lösenord
+            br
+            input.logincontent#password(type="password", name="pasword")
+        button#loginbutton.buttonstyle(onClick="login()") Logga in
