@@ -1,0 +1,25 @@
+{
+  "name": "wei-jan8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Testo12/WEI-Jan8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Testo12/WEI-Jan8/issues"
+  },
+  "homepage": "https://github.com/Testo12/WEI-Jan8#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jade": "^1.11.0",
+    "mongoose": "^5.4.2"
+  }
+}
