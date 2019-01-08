@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Testo12/WEI-Jan8#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "jade": "1.11.0",
