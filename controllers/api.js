@@ -6,6 +6,27 @@ var config = require('../config/database');
 var passed = false;
 var token;
 
+
+exports.member = function(req, res){
+    Users.findOneAndUpdate({team: req.body.team}, {$push:{name: req.body.name}}, {new: true}, (err, doc) =>{
+        if (err){
+            return next(err);
+        }
+        res.send('Nice!');
+    }); 
+}
+
+
+exports.skill = function(req, res){
+    Users.findOneAndUpdate({team: req.body.team}, {$push:{name: req.body.skill}}, {new: true}, (err, doc) =>{
+        if (err){
+            return next(err);
+        }
+        res.send('Nice!');
+    }); 
+}
+
+
 exports.register = function(req,res){
     var register = new Admin({
         userName: req.body.userName,
