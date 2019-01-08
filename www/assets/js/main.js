@@ -1,9 +1,14 @@
 function login(){
-    email = $('#userName').val().toLowerCase();
-    password = $('#password').val().toLowerCase();
+    $("form").submit(function(e){
+        e.preventDefault();
+    });
+    var userName = $('#userName').val();
+    var password = $('#password').val();
+    var lowU = userName.toLowerCase();
+    var lowP = password.toLowerCase();
     userData = {
-        userName: userName,
-        password: password
+        userName: lowU,
+        password: lowP
 
     };
     $.ajax({
